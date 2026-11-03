@@ -8,5 +8,5 @@ with open("logs/auth.log", "r") as arquivo:
            tentativas[ips] += 1
         else:
            tentativas[ips] = 1
-
-print(f"{tentativas}")
+    for ip, quantidade in tentativas.items():
+      print(ip, quantidade)
