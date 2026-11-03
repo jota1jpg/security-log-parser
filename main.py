@@ -9,4 +9,4 @@ with open("logs/auth.log", "r") as arquivo:
         else:
            tentativas[ips] = 1
     for ip, quantidade in tentativas.items():
-      print(ip, quantidade)
+      print(f" |IP:{ip}|Tentativas:{quantidade}|")
