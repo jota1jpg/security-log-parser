@@ -9,4 +9,8 @@ with open("logs/auth.log", "r") as arquivo:
         else:
            tentativas[ips] = 1
     for ip, quantidade in tentativas.items():
-      print(f" |IP:{ip}|Tentativas:{quantidade}|")
+      if quantidade >= 3:
+         status = "SUSPEITO"
+      else:
+         status = "NORMAL"
+      print(f" |IP:{ip}| Tentativas:{quantidade} | Status: {status}")
