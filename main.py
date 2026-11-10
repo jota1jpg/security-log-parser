@@ -12,12 +12,14 @@ with open("logs/auth.log", "r") as arquivo:
             else:
                 tentativas[ips] = 1
 
+print(f"====== RELATÓRIO DE SEGURANÇA ====== ")
+
 for ip, quantidade in tentativas.items():
     if quantidade >= 3:
        status = "SUSPEITO"
        ips_suspeitos += 1
     else:
        status = "NORMAL"
-       print(f"====== RELATÓRIO DE SEGURANÇA ====== ")
-       print(f"IP:{ips} | Tentativas:{quantidade} | Status:{status}")
-       print(f"Total  de IPs suspeitos:{ips_suspeitos}")
+       
+    print(f"IP:{ip} | Tentativas:{quantidade} | Status:{status}")
+print(f"Total de IPs suspeitos:{ips_suspeitos}")
