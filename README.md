@@ -91,3 +91,6 @@ A classificação é baseada apenas na quantidade de tentativas malsucedidas por
 ---
 
 **Projeto desenvolvido para fins educacionais.**
+
+<img width="456" height="85" alt="image" src="https://github.com/user-attachments/assets/83e5fe9d-df9d-4795-965d-3e133633f19f" />
+
